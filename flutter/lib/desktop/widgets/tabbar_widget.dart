@@ -1406,8 +1406,8 @@ class _TabDropDownButtonState extends State<_TabDropDownButton> {
                     ),
                     Obx(
                       () {
-                        if (tabInfo?.onTabCloseButton != null &&
-                            menuHover.value) {
+                        if (menuHover.value &&
+                            tabInfo?.onTabCloseButton != null) {
                           return InkWell(
                               onTap: () {
                                 tabInfo?.onTabCloseButton?.call();
